@@ -1,0 +1,34 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="login.loginApp" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page id="page1" title="Login Paneli">
+		<content>
+		<FlexBox height="400px" width="100%" alignItems="Center" justifyContent="Center">
+			<Panel width="350px">
+	              <content>  
+	              	<FlexBox height="100px"
+							alignItems="Start"
+							justifyContent="Start">
+						<items>
+			                  <Label text="Kullanıcı Adı" class="sapUiSmallMarginTop" />
+			                  <Label text=":" class="sapUiSmallMarginTop" />
+			                  <Input id="userID" value="" class="sapUiTinyMarginBegin"/>
+						</items>
+					</FlexBox>
+					<FlexBox height="100px"
+							alignItems="Start"
+							justifyContent="Start">
+						<items>
+			                  <Label text="Şifre" class="sapUiSmallMarginTop" />
+			                  <Label text=":" class="sapUiLargeMarginBegin  
+			                  		sapUiSmallMarginTop" />
+			                  <Input id="userPassword" class="sapUiTinyMarginBegin" 
+			                  		type="Password" value=""/>
+						</items>
+					</FlexBox>
+	                <Button id="btn1" text="Login" press="btnClick" width="100%" ></Button>
+	             </content>
+	        </Panel>
+        </FlexBox>
+		</content>
+	</Page>
+</core:View>
