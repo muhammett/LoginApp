@@ -65,8 +65,6 @@ sap.ui.controller("login.loginApp", {
 			
 		},
 		function(err) {
-			window.alert('asdasdasd');
-			console.log('TEST');
 		});
 
 	},
