@@ -65,7 +65,8 @@ sap.ui.controller("login.loginApp", {
 			
 		},
 		function(err) {
-			window.alert('basarısız');
+			window.alert('asdasdasd');
+			console.log('TEST');
 		});
 
 	},
