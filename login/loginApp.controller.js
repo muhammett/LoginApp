@@ -67,6 +67,7 @@ sap.ui.controller("login.loginApp", {
 		function(err) {
 			window.alert('asdasdasd');
 			console.log('TEST');
+			console.log('this is master branch')
 		});
 
 	},
