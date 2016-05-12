@@ -1,0 +1,64 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="root.login.userPage" xmlns:html="http://www.w3.org/1999/xhtml" >
+	<Page id="page2" >
+		<content>  
+
+	             <!--    <Button id="btn2" text="Login" press="btnClick" width="100%" ></Button> -->
+	             				
+	             				
+	    <Table id="idProductsTable"
+	      itempress="handleListSelect"  
+        elect="handleListSelect" 
+		items="{/results}">
+		<headerToolbar>
+			<Toolbar>
+				<Title text="Üye Tablosu"/>
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column>
+				<Text text="Userid" />
+			</Column>
+			<Column>
+				<Text text="Name" />
+			</Column>
+			<Column
+				minScreenWidth="Tablet"
+				demandPopin="true">
+				<Text text="Surname" />
+			</Column>	
+				<Column>
+				<Text text="Password" />
+			</Column>	
+			</columns>
+		<items>
+			<ColumnListItem type="Detail" detailPress="onListItemEdit"> 
+			  
+				<cells>
+				
+					<ObjectIdentifier						
+						text="{Userid}"/>
+						<Text
+						text="{Name}"/>
+					<Text
+						text="{Surname}"/>
+					<Text
+						text="{Password}" type="Password"/>			
+				</cells>
+			</ColumnListItem>
+		</items>
+	    
+	    </Table>
+	    
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	                
+	                
+		</content>
+	</Page>
+</mvc:View>
